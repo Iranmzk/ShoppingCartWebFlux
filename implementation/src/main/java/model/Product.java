@@ -1,6 +1,5 @@
 package model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -14,6 +13,5 @@ public class Product {
     private String segment;
     private String type;
     private String price;
-    @JsonProperty("shortDescription")
     private String description;
 }

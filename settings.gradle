@@ -3,4 +3,5 @@ include 'common'
 include 'implementation'
 include 'contract'
 include 'spring-cloud-server'
+include 'integration'
 
