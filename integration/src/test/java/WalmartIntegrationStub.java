@@ -10,7 +10,7 @@ public class WalmartIntegrationStub {
                                 .type("Video Game Console")
                                 .name("PlayStation 5 Digital Edition with PS5 Starlight Blue DualSense" +
                                         "Controller W/ Pulse Headset Limited Bundle")
-                                .price(PriceInfo.builder()
+                                .priceInfo(PriceInfo.builder()
                                         .currentPrice(CurrentPrice.builder()
                                                 .price(769.00)
                                                 .currencyUnit("USD")
@@ -35,7 +35,7 @@ public class WalmartIntegrationStub {
                                 .type("Video Game Console")
                                 .name("PlayStation 5 Digital Edition with PS5 Starlight Blue DualSense" +
                                         "Controller W/ Pulse Headset Limited Bundle")
-                                .price(PriceInfo.builder()
+                                .priceInfo(PriceInfo.builder()
                                         .currentPrice(CurrentPrice.builder()
                                                 .price(769.00)
                                                 .currencyUnit("USD")

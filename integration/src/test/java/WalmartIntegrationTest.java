@@ -69,7 +69,7 @@ class WalmartIntegrationTest {
 
         StepVerifier.create(integration.findProductsDetails("841765146"))
                 .assertNext((Data data) ->
-                        assertEquals(expect,data))
+                        assertEquals(expect, data))
                 .verifyComplete();
     }
 }

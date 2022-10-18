@@ -14,7 +14,7 @@ public class WebClientConfig {
     private String apiKey;
 
     @Value("${apiKeyRespond}")
-    private String apiKeyrespond;
+    private String apiKeyRespond;
 
     @Value("${apiHost}")
     private String apiHost;
@@ -27,7 +27,7 @@ public class WebClientConfig {
         return WebClient.builder()
                 .baseUrl("https://walmart.p.rapidapi.com")
                 .defaultHeader(apiHost,apiHostRespond)
-                .defaultHeader(apiKey,apiKeyrespond)
+                .defaultHeader(apiKey,apiKeyRespond)
                 .build();
     }
 }

@@ -1,6 +1,8 @@
 import exceptions.ApiNotFoundException;
 import lombok.AllArgsConstructor;
 import model.Data;
+import org.springframework.context.event.ContextRefreshedEvent;
+import org.springframework.context.event.EventListener;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.ClientResponse;
@@ -15,8 +17,7 @@ public class WalmartIntegration {
     public Mono<Data> findProductsDetails(String usItemId) {
         return webClientWalmart.get()
                 .uri(uriBuilder -> uriBuilder
-                        .path("/products/v3/get-details?usItemId="
-                                .concat(usItemId))
+                        .path("/products/v3/get-details")
                         .queryParam("usItemId", usItemId)
                         .build())
                 .retrieve()
@@ -24,5 +25,10 @@ public class WalmartIntegration {
                         -> response.bodyToMono(ApiNotFoundException.class))
                 .bodyToMono(Data.class);
 
+    }
+    @EventListener(ContextRefreshedEvent.class)
+    public Mono<Data> createTest(){
+        return this.findProductsDetails("841765146")
+                .map(a -> a);
     }
 }
