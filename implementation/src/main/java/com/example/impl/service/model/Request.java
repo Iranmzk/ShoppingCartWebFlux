@@ -1,18 +1,15 @@
-package entity;
-
-import entity.bank.BankName;
+package com.example.impl.service.model;
+import com.example.impl.entity.bank.BankName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ShoppingCart {
-    @Id
+public class Request {
     private String usItemId;
     private String name;
     private String segment;

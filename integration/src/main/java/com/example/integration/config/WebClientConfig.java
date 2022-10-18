@@ -1,4 +1,4 @@
-package config;
+package com.example.integration.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

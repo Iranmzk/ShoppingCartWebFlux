@@ -1,7 +1,7 @@
-package exceptions;
+package com.example.exceptions;
 
-import exceptions.errorobject.ErrorObject;
-import exceptions.errorresponse.ErrorResponse;
+import com.example.exceptions.errorobject.ErrorObject;
+import com.example.exceptions.errorresponse.ErrorResponse;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;

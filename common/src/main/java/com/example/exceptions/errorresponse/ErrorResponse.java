@@ -1,7 +1,7 @@
-package exceptions.errorresponse;
+package com.example.exceptions.errorresponse;
 
+import com.example.exceptions.errorobject.ErrorObject;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import exceptions.errorobject.ErrorObject;
 import lombok.Builder;
 import lombok.Data;
 

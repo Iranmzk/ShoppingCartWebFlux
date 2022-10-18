@@ -1,6 +1,6 @@
-package repository;
+package com.example.impl.repository;
 
-import entity.ShoppingCart;
+import com.example.impl.entity.ShoppingCart;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

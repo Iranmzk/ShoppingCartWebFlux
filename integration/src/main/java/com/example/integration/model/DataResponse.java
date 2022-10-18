@@ -1,5 +1,4 @@
-package model;
-
+package com.example.integration.model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PriceInfo {
-    private CurrentPrice currentPrice;
+public class DataResponse {
+    private Product product;
 }

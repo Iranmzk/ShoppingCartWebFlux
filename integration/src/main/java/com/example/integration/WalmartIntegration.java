@@ -1,6 +1,8 @@
-import exceptions.ApiNotFoundException;
+package com.example.integration;
+
+import com.example.exceptions.ApiNotFoundException;
+import com.example.integration.model.Data;
 import lombok.AllArgsConstructor;
-import model.Data;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.http.HttpStatus;

@@ -1,4 +1,4 @@
-package exceptions.errorobject;
+package com.example.exceptions.errorobject;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,4 +1,4 @@
-import model.*;
+import com.example.integration.model.*;
 
 public class WalmartIntegrationStub {
     static Data dataExpected() {

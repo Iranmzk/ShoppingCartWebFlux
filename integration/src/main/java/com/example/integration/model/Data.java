@@ -1,13 +1,13 @@
-package model;
+package com.example.integration.model;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+@lombok.Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DataResponse {
-    private Product product;
+public class Data {
+    private DataResponse data;
 }
